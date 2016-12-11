@@ -9,4 +9,4 @@
 * What is a commit? What makes a good commit message?
 * Commit is a way to comment what changes have been made. A detailed message of what changes or additions have made to the file so that anyone can understand what is in the file.
 * What is a merge conflict?
-* If you change the same part of the same file differently in the two branches you're merging together, it won't be able to merge them cleanly.
+* If you change the same part of the same file differently in the two branches you're merging together, it won't be able to merge them cleanly. The process will pause until the problem is fixed. 
