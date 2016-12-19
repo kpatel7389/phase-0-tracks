@@ -28,3 +28,10 @@ https://www.flickr.com/photos/22586679@N04/3857267279/in/photolist-5V7BiJ-49baZu
 
 License URL:
 https://creativecommons.org/licenses/by-nd/2.0/
+
+
+
+checkout master
+cd phase-0-tracks git pull origin master
+cd html
+git push origin master 
