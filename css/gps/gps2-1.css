@@ -1,3 +1,57 @@
-body {
-	background-color: pink;
+      body {
+  margin: 5%;
 }
+
+.image{
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+img {
+  height: 330px;
+  width: 400px;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  background-color: blue;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: helvetica;
+}
+
+.column-1 , .column-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 35%;
+ }
+
+.column-1 {
+  background-color: orange;
+}
+
+.column-2 {
+  float: right;
+  background-color: green;
+}
+
+footer {
+  background-color: red;
+  width: 100%;
+  margin-top: 15px;
+}
+
+
