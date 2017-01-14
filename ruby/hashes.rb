@@ -13,8 +13,14 @@ kids = gets.chomp
 puts "Do you have a theme in mind? (y/n)"
 theme = gets.chomp
 
+
+
+
 puts "Do you like wallpaper? (y/n)"
 wallpaper = gets.chomp
 
 puts "Do you prefer dark colors or lighter colors?"
 paint_color = gets.chomp
+
+puts "How many bedrooms do you have?"
+bedrooms = gets.chomp.to_i
