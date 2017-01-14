@@ -15,6 +15,7 @@ end
 
 
 real_name = 0
+new_arr = []
     until ["quit"].include? real_name do
         puts "What is your name" 
         real_name = gets.chomp
@@ -22,6 +23,8 @@ real_name = 0
     if real_name == "quit"    
         puts "The end" 
     else   
-        puts next_vowel(real_name) 
+         arr = next_vowel(real_name)
     end
 end 
+puts new_arr << arr
+
