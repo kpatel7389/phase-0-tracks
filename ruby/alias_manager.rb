@@ -18,13 +18,21 @@ real_name = 0
 new_arr = []
     until ["quit"].include? real_name do
         puts "What is your name" 
-        real_name = gets.chomp
-    
-    if real_name == "quit"    
-        puts "The end" 
-    else   
-         arr = next_vowel(real_name)
+       real_name = gets.chomp
+     
+
+        if real_name != "quit"
+        	next_vowel(real_name)
+        else
+        	break
+        end
+        new_arr.push(real_name)
     end
-end 
-puts new_arr << arr
+        puts new_arr
+
+       
+ 
+
+
+
 
