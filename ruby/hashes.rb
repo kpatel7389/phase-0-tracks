@@ -1,5 +1,19 @@
+
+
+
+
+user_data = {}
+names = ''
+address = ''
+age = ''
+kids = ''
+theme = ''
+bedrooms = ''
+
+
+while 
 puts "What is your name?"
-names = gets.chomp
+input names = gets.chomp
 
 puts "What is your address?"
 address = gets.chomp
@@ -14,13 +28,19 @@ puts "Do you have a theme in mind? (y/n)"
 theme = gets.chomp
 
 
-
-
-puts "Do you like wallpaper? (y/n)"
-wallpaper = gets.chomp
-
-puts "Do you prefer dark colors or lighter colors?"
-paint_color = gets.chomp
-
 puts "How many bedrooms do you have?"
 bedrooms = gets.chomp.to_i
+ 
+
+puts "Here is all the information:"
+
+user_data.hash.each { |key,value|
+	puts "#{key}=> #{value}"
+
+}
+
+#user_data = {first:names, address:address, age:age, kids:kids, theme:theme, bedrooms:bedrooms}
+#puts "#{user_data}"
+
+
+
