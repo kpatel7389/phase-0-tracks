@@ -1,3 +1,9 @@
+
+
+
+
+loop do
+
 puts "What is your name?"
 names = gets.chomp
 
@@ -14,13 +20,12 @@ puts "Do you have a theme in mind? (y/n)"
 theme = gets.chomp
 
 
-
-
-puts "Do you like wallpaper? (y/n)"
-wallpaper = gets.chomp
-
-puts "Do you prefer dark colors or lighter colors?"
-paint_color = gets.chomp
-
 puts "How many bedrooms do you have?"
 bedrooms = gets.chomp.to_i
+
+input = gets.chomp
+break if input == 'exit'
+end 
+
+user_data = {first:names, address:address, age:age, kids:kids, theme:theme, bedrooms:bedrooms}
+puts "#{user_data}"
