@@ -8,7 +8,11 @@ class Santa
 		puts "That was a good #{cookie_type} cookie!" 
 	end
 
-	def initialize()
+	def initialize(gender, ethnicity)
+		@gender = gender
+		@ethnicity = ethnicity
+		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+		@age = 0
 		puts "Intializing Santa instance..."
 	end
 		
