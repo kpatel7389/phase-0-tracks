@@ -1,22 +1,29 @@
 class TodoList 
 
-	def initialize(list)
-		puts list
+	attr_reader :items
+
+	def initialize(items = [])
+		
+		@items = items
 	end
 
 	def add_item(item)
-		list << item 
+		
+		@items << item
 	end
 
 	def delete_item(item)
-		list.delete(item)
+		items.delete(item)
+		items
 	end
 
 	def get_items(i)
-		list[i]
+		@items.at(i)
 	end
+
+
 
 end
 
-list = ["do the dishes", "mow the lawn"]
+items = ["do the dishes", "mow the lawn"]
 
