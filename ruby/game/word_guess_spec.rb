@@ -4,15 +4,15 @@ describe Game do
 	let(:game) { Game.new('apple')}
 
 
-  it "prints current status of game" do
-    expect(game.current_status).to respond_to(:current_status)
+  it "guesses the secret word correctly" do
+    expect(game.secret_word('apple')).to be true
   end
 
-  it "guess a single letter or word" do
-    expect(game.take_a_guess).to cover('apple')
+  it "if the guess is non letter" do
+    expect(game.good_guess?('1')).to be false 
   end
 
-  it "give how many guess are left" do
+  it "how many guesses left if you guess the wrong letter" do
     expect(game.limited_guess('k')).to eq(4)
   end
 end
