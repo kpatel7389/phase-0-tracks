@@ -1,13 +1,24 @@
 module Shout
-   def self.yell_angrily(words)
-    words + "!!!" + " :("
-  end
 
-  def self.yelling_happily(words)
-  	words + "!!!" + " :)"
-  end
-
+	def yelling_happily(words)
+		puts words + "!!!" + " :)"
+	end
 end
 
-Shout.yelling_happily("yay")
-Shout.yell_angrily("NO")
+class Birthday
+	include Shout
+end
+
+class Greeting
+	include Shout
+end
+
+birthday = Birthday.new
+birthday.yelling_happily('Happy Birthday')
+
+greeting = Greeting.new
+greeting.yelling_happily('Hello')
+
+
+
+
