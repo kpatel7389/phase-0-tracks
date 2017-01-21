@@ -7,4 +7,7 @@ module Shout
   	words + "!!!" + " :)"
   end
 
-  
+end
+
+Shout.yelling_happily("yay")
+Shout.yell_angrily("NO")
