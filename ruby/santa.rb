@@ -28,6 +28,12 @@ class Santa
 	def eat_milk_and_cookies(cookie_type)
 		puts "That was a good #{cookie_type} cookie!" 
 	end
+
+	def get_mad_at(reindeer)
+ 	  @reindeer_ranking.insert(-1, 'Vixen').uniq
+ 	  p @reindeer_ranking
+ 	  puts "#{reindeer} knows what he did!"
+ 	  end
 end
   
   	
@@ -55,6 +61,7 @@ end
    puts "This Santa's Gender: #{santa.gender}"
    puts "This Santa's Ethnicity: #{santa.ethnicity}"
    puts "#{santa.eat_milk_and_cookies("snickerdoodle")}"
+   puts "#{santa.get_mad_at("Vixen")}"
   
  end
 
