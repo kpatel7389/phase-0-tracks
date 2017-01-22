@@ -1,5 +1,12 @@
 class Santa
 
+	def initialize(gender, ethnicity)
+		@gender = gender
+		@ethnicity = ethnicity
+		@age = 0
+		reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+	end
+
 	def speak()
 		puts "Ho, ho, ho! Happy holidays!"
 	end
@@ -9,37 +16,25 @@ class Santa
 	end
 	
 	def age
-        puts "The santa" + " is now #{@age} years old."
-        @age = @age
-        oneYearPasses
+        @age += 1
       end
       
-  	def oneYearPasses
-        if @age >= 0
-          @age = @age + 1
-        end
-  	
-  	
-  	def gender
-    @gender
-  	end
+  	def celebrate_birthday
+  		puts "This santa is #{age} years old"
   
-	def gender=(new_gender)
-	  @gender = new_gender
-	end
-
-	def initialize()
-		@gender = ''
-		@ethnicity = ''
-		@age = 0
+  	
+  
+	def rand_genders
+		genders = ['agender', 'female', 'bigender', 'male', 'female', 'gender fulid', 'N/A']
+		gender = genders[rand(genders.length)]
 	end
 	
-	def ethnicity
-	  @ethnicities
+	def rand_ethnicity
+		ethnicities = ['black', 'Latino', 'white', 'Japanese', 'prefer not to say', 'Mystical Creature (unicorn)', 'N/A']
+		ethnicity = ethnicities[rand(ethnicities.length)]
 	end
 end
 
-reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 
 santas = Santa.new
 santas.age
@@ -49,7 +44,7 @@ puts "#{santas.gender} is now a female"
 santas.speak
 
 santas = []
-genders = ['agender', 'female', 'bigender', 'male', 'female', 'gender fulid', 'N/A']
+
 ethnicities = ['black', 'Latino', 'white', 'Japanese', 'prefer not to say', 'Mystical Creature (unicorn)', 'N/A']
 
 puts "Iterating through list to add gender and ethnicity ..."
