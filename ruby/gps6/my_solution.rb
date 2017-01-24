@@ -98,3 +98,34 @@ alaska.virus_effects/
 
 #=======================================================================
 # Reflection Section
+
+/What are the differences between the two different hash syntaxes shown in the state_data file?
+The two differences is using the hash rocket and colon. For a hash you can either use the hash rocket to add a value or a colon but the colon 
+will only work when the key is a symbol.
+
+What does require_relative do? How is it different from require?
+  require_relative allows you to get access to the data using relative path and usually your own file while 
+  require allows you get a file that is created by someone else.  
+
+What are some ways to iterate through a hash?
+.each is the best way to iterate using key and value
+
+When refactoring virus_effects, what stood out to you about the variables, if anything?
+calling the attributes was redundant so instead used attr reader so that the code can be simplified. 
+
+
+What concept did you most solidify in this challenge?
+Taking a look at someone elses code and understanding what output the code is trying to give.  I think
+refactoring also helps. 
+
+
+
+
+
+
+
+
+
+
+
+
