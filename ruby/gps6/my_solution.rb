@@ -1,7 +1,7 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge [by myself, with: Roger Clayton].
+# We spent 2 hours on this challenge.
 
 # EXPLANATION OF require_relative
 # allows you to get access to the data in the file using the relative path
