@@ -31,8 +31,10 @@ console.log(longestPhrase(arr));
 	// -create a for loop to see if any of the keys in the 2 objects match
 	// -if key1 and key2 match in data1 and data2 then the output should be true 
 
-var data1 = {name: 'Steven', age: 54};
+//var data1 = {name: 'Steven', age: 54};
 var data2 = {name: 'Tamir', age:54};
+var data1 = {name: 'Steven', age:53};
+
 
 function compareObjects(data1, data2) {
 	var match = false;
@@ -47,6 +49,7 @@ function compareObjects(data1, data2) {
 }
 
 console.log(compareObjects(data1, data2));
+
 
 
 
