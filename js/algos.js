@@ -51,6 +51,34 @@ function compareObjects(data1, data2) {
 console.log(compareObjects(data1, data2));
 
 
+// Write a function that takes a number for length
+// 	-set an empty array
+// 	-set var equal to a string of alphabet
+// 	-Generate num amount of strings of random length
+// 		-set var to access letters
+// 		-use Math.random function to access the number of letters 1-10
+// 		-push the strings into the empty array
+// 	Output should be array of the number of length (1-10) we called
+
+function generateRandom(num){
+	var alphabet = "abcdefghijklmnopqrstuvwxyz";
+    var arr = [];
+    for(var i = 0; i < num; i++){
+	    var letters = '';
+      rand = Math.floor((Math.random() * 10) + 1);
+ 	      for(var j = 0; j < rand; j++){
+ 	        letters = letters + alphabet.charAt(Math.floor((Math.random() * 26) + 1));
+ 	      }
+ 	  arr.push(letters);
+    }
+  console.log(arr);
+  return arr;
+}
+
+ for(var i = 1; i <= 10; i++){
+	longestPhrase(generateRandom(6));
+  }
+
 
 
 
