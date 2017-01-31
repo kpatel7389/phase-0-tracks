@@ -1,0 +1,107 @@
+# 1 Display the information in one table
+
+sqlite> SELECT * FROM dancer;
+
+1|Maya|22|True|2
+2|Kosha|27|True|3
+3|Alia|23|False|1
+4|Karen|22|False|1
+5|Sandy|24|False|4
+6|Alex|22|True|2
+
+pt 2
+
+sqlite> SELECT * FROM style;
+
+1|Modern
+2|Ballet
+3|Hip Hop
+4|Contemporary
+
+# 2 Update an item that meets some condition
+
+sqlite> UPDATE dancer SET multiple_style = "True" WHERE name = "Alia";
+
+sqlite> SELECT * FROM dancer;
+
+1|Maya|22|True|2
+2|Kosha|27|True|3
+3|Alia|23|True|1
+4|Karen|22|False|1
+5|Sandy|24|False|4
+6|Alex|22|True|2
+
+
+# 3 Display the information in both tables using one query
+
+sqlite> SELECT * FROM dancer, style WHERE dancer.style_id=style.id;
+
+1|Maya|22|True|2|2|Ballet
+2|Kosha|27|True|3|3|Hip Hop
+3|Alia|23|True|1|1|Modern
+4|Karen|22|False|1|1|Modern
+5|Sandy|24|False|4|4|Contemporary
+6|Alex|22|True|2|2|Ballet
+
+# 4 Display a narrower selection of columns from both tables using one query.
+sqlite> SELECT dancer.name, style.style_name FROM dancer JOIN style ON dancer.style_id=style.id;
+
+Maya|Ballet
+Kosha|Hip Hop
+Alia|Modern
+Karen|Modern
+Sandy|Contemporary
+Alex|Ballet
+
+# 5 Delete an item that meets some condition
+
+sqlite> DELETE FROM dancer WHERE name="Karen";
+
+sqlite> SELECT * FROM dancer;
+
+1|Maya|22|True|2
+2|Kosha|27|True|3
+3|Alia|23|True|1
+5|Sandy|24|False|4
+6|Alex|22|True|2
+
+
+
+Research On Your Own:
+
+#1 LEFT JOIN
+
+sqlite> SELECT * FROM dancer LEFT JOIN style ON dancer.style_id=style.id;
+
+1|Maya|22|True|2|2|Ballet
+2|Kosha|27|True|3|3|Hip Hop
+3|Alia|23|True|1|1|Modern
+5|Sandy|24|False|4|4|Contemporary
+6|Alex|22|True|2|2|Ballet
+
+#2 Inner Join
+
+sqlite> SELECT dancer.name, style.style_name FROM dancer INNER JOIN style ON dancer.style_id=style.id;
+
+Maya|Ballet
+Kosha|Hip Hop
+Alia|Modern
+Sandy|Contemporary
+Alex|Ballet 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
