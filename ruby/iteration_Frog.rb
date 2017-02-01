@@ -16,3 +16,12 @@ end
 
 p cars2
 
+#Release 2
+
+#1. Iterate to meet a condition to delete any number less than 3 
+
+numbers = [1,2,3,4,5]
+numbers.reject! { |num| num < 3}
+puts numbers
+
+
