@@ -15,16 +15,19 @@
 
 "Stop! You’re under arrest!".upcase
  => "STOP! YOU’RE UNDER ARREST!"
-
+ 
+ "the usual".insert(-1, " suspects")
  "the usual".concat(" suspects")
 => "the usual suspects"
 
+" suspects".insert(0,"the usual")
 " suspects".prepend("the usual")
  => "the usual suspects"
 
  "The case of the disappearing last letter".chop
  => "The case of the disappearing last lette"
 
+"The mystery of the missing first letter".sub("T", "")
 "The mystery of the missing first letter".slice(1..-1)
  => "he mystery of the missing first letter"
 
