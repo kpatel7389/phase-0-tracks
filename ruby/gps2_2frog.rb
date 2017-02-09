@@ -91,6 +91,28 @@ p list1
 
 pretty_list(list1)
 
+# Release 4: Reflect
+# 1. I learned that writing down what we need to before actually writing our code out is 
+# a much better process and is less frustrating when the time comes to write out our code.
+
+# 2. Array would only allow us to list our items in our grocery list but a hash will allow us to give 
+# a quantity to each items in our list. 
+
+# 3. A method returns a hash with an updated item and its quantity. 
+
+# 4. You can pass a default value or what you want to get an output for. 
+
+# 5. You need to print the method or use a method inside another method.
+
+# 6. I think I was better able to understand how to use hash and block but still need help how to initially start a problem. 
+
+
+
+
+
+
+
+
 
 
 
