@@ -7,6 +7,20 @@
 // call the function
 
 
+array = ["long phrase","longest phrase","longer phrase"];
+
+function longest_phrase(array){
+	var lon_phrase = '';
+	for(var i = 0; i < array.length; i++) {
+		if(array[i].length > lon_phrase.length){
+			long_phrase = array[i];
+		}
+	}
+	return lon_phrase;
+}
+
+longest_phrase(array);
+
 
 
 
