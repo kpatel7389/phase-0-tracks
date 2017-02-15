@@ -44,7 +44,7 @@ function compare_obj(obj1, obj2){
 var match = false;
 for(var key1 in obj1){
 	for(var key2 in obj2){
-		if(key1 == key 2 && obj1[key1] == obj2[key2]){
+		if(key1 == key2 && obj1[key1] == obj2[key2]){
 			match = true
 		}
 	}
@@ -69,6 +69,23 @@ compare_obj(obj1, obj2)
 // 	return array
 // Use a loop to incoporate longest word method
 
+function rand_words(int){
+	var alphabet = 'abcdefghijklmnopqrstiuvxyz'
+	var array = []
+	for(var i = 0; i < int; i++){
+		var letters = '';
+		rand = Math.floor((Math.random()*10) +1);
+		for(var j = 0; j< rand; j++){
+			letters = letters + alphabet.charAt(Math.floor((Math.random()*26) +1));
+		}
+		array.push(letters);
+	}
+	console.log(array)
+}
+
+for(var i = 1; i <= 10; i++){
+	longest_phrase(rand_words(3));
+}
 
 
 
