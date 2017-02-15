@@ -9,15 +9,15 @@
 
 function reverse(str) {
 
-var string = " "
-var index = str.length -1
+var string = "";
+var index = str.length -1;
+
 for (var i = index; i >= 0; i--) {
 	string += str[i]
 }
-
-return string
+return string;
 }
 
-reverse("hello")
+rev_str = reverse("hello");
 
 
