@@ -36,7 +36,24 @@ longest_phrase(array);
 // Return if match is true or false
 // Call the function
 
+obj1 = {name: 'Kosha', age: 27};
+obj2 = {name: 'Harshil', age:27};
 
+function compare_obj(obj1, obj2){
+
+var match = false;
+for(var key1 in obj1){
+	for(var key2 in obj2){
+		if(key1 == key 2 && obj1[key1] == obj2[key2]){
+			match = true
+		}
+	}
+}
+return match
+
+}
+
+compare_obj(obj1, obj2)
 
 
 
