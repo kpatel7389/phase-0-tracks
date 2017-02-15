@@ -1,3 +1,5 @@
+// Release 0:
+
 // Create a function that takes an array as a parameter
 // Set var to what will be returned
 // Use for loop to through the array until it finds the longest phrase
@@ -20,6 +22,20 @@ function longest_phrase(array){
 }
 
 longest_phrase(array);
+
+// Release 1:
+
+// Create a function that takes two objects as a parameter
+// Set var 1 equal to obj1
+// Set var 2 equal to obj2
+// Set var if match is false
+// Use for loop to check a key in obj1
+// 	Use another for loop to check key in obj2
+// 		IF the key in obj1 and the key in obj 2 match
+// 			return true
+// Return if match is true or false
+// Call the function
+
 
 
 
