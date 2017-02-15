@@ -55,5 +55,30 @@ return match
 
 compare_obj(obj1, obj2)
 
+// Release 2:
+
+// Create a function that takes an integer for length
+// Set variable to empty array
+// Set variable to equal to a string of the alphabet to make words
+// Use for loop to create x amount of strings of random lengths
+// 	Set random number generator equal to a variable with max 10 letters
+// 	Set an empty string variable
+// 	Use for loop to randomly select letters 
+// 		Set variable to store the random letters 
+// 	push the letter into the empty array
+// 	return array
+// Use a loop to incoporate longest word method
+
+
+
+
+
+
+
+
+
+
+
+
 
 
