@@ -21,3 +21,7 @@ return string;
 rev_str = reverse("hello");
 
 
+num = 3
+if (num > 1) {
+	rev_str;
+}
