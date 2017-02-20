@@ -1,0 +1,82 @@
+1. Display the information of one table.
+
+sqlite> SELECT * FROM dancers;
+Kosha|27|true|1
+Matt|25|false|1
+Joe|26|true|2
+Candice|26|true|4
+Steve|27|false|3
+Emma|26|true|3
+
+2. Update an item that meets some condition
+
+sqlite> UPDATE dancers SET multiple_style=“false” WHERE name=“Candice”;
+
+sqlite> SELECT * FROM dancers;
+Kosha|27|true|1
+Matt|25|false|1
+Joe|26|true|2
+Candice|26|false|4
+Steve|27|false|3
+Emma|26|true|3
+
+
+
+3. Display the information in both tables using one query.
+
+sqlite> SELECT * FROM dancers, styles WHERE dancers.style_id = id;
+Kosha|27|true|1|1|hip hop
+Matt|25|false|1|1|hip hop
+Joe|26|true|2|2|ballet
+Candice|26|false|4|4|modern
+Steve|27|false|3|3|contemporary
+Emma|26|true|3|3|contemporary
+
+
+
+
+4. Display a narrower selection of columns (fewer columns than all of them using one query.
+
+sqlite> SELECT dancers.name, styles.style_name FROM dancers JOIN styles ON dancers.style_id = styles.id;
+Kosha|hip hop
+Matt|hip hop
+Joe|ballet
+Candice|modern
+Steve|contemporary
+Emma|contemporary
+
+
+
+5. Delete an item that meets some condition (you can choose a condition that makes sense).
+
+
+sqlite> DELETE FROM dancers WHERE age=28;
+sqlite> SELECT * FROM dancers;
+Kosha|27|true|1
+Matt|25|false|1
+Joe|26|true|2
+Candice|26|false|4
+Steve|27|false|3
+Emma|26|true|3
+
+JOIN commands:
+
+sqlite> SELECT age, name FROM dancers LEFT OUTER JOIN styles ON dancers.style_id = styles.id;
+
+27|Kosha
+25|Matt
+26|Joe
+26|Candice
+27|Steve
+26|Emma
+
+
+sqlite> SELECT name, age FROM dancers LEFT OUTER JOIN styles ON dancers.style_id = styles.id;
+
+Kosha|27
+Matt|25
+Joe|26
+Candice|26
+Steve|27
+Emma|26
+
