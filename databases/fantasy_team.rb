@@ -35,3 +35,10 @@ def log_player
 			db.execute("INSERT INTO team_info (player_name, position, team_name) VALUES (?,?,?)", [player_name, position, team_name])
 		end
 end
+
+
+# Create method to view fantasy football team
+def view_fantasy_team
+	db = SQLite3::Database.new("team_info")
+	p db.execute("SELECT * FROM team_info")
+end
