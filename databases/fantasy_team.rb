@@ -42,3 +42,30 @@ def view_fantasy_team
 	db = SQLite3::Database.new("team_info")
 	p db.execute("SELECT * FROM team_info")
 end
+
+
+def user(answer)
+	if answer == "a"
+		log_player
+	elsif answer == "b"
+		view_fantasy_team
+	else
+		puts "Not valid!"
+	end
+end
+
+
+## Driver Code
+
+complete = false
+until complete
+	puts "Create your fantasy football team!"
+	puts "If you would like add a Player type (a) or if you would like to view your team type (b)"
+	answer = gets.chomp
+	user(answer)
+	puts "Are you done building your team?(y/n)"
+	answer1 = gets.chomp
+	if answer1 == "y"
+		complete = true
+	end
+end
